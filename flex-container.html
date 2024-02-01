@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="s1"></div>
+        <div class="s2"></div>
+        <div class="s3"></div>
+    </div>
+    <div class="container">
+        <div class="items">saksma</div>
+        <div class="items">pokharel</div>
+        <div class="items">bkt</div>
+    </div>
+
+
+    <!-- // assignment -->
+    <div class="box">
+        <div class="firstbox">
+            <div class="three-box"></div>
+            <div class="three-box sub">
+                <div class="two-box"></div>
+                <div class="two-box"></div>
+            </div>
+            <div class="three-box"></div>
+        </div>
+        <div class="secondbox">
+            <div class="bigbox"></div>
+            <div class="equalbox">
+                <div class="equalbox1"></div>
+                <div class="equalbox2"></div>
+            </div>
+        </div>
+        <div class="thirdbox">
+            <div class="fourbox aa"></div>
+            <div class="fourbox bb"></div>
+            <div class="fourbox cc"></div>
+            <div class="fourbox dd"></div>
+        </div>
+    </div>
+</body>
+<!-- assignment css  -->
+<style>
+    .box {
+        border: 4px solid darkolivegreen;
+        height: 75vh;
+        background-color: rgb(195, 232, 209);
+        padding: 16PX;
+        gap: 10;
+    }
+
+    .firstbox,
+    .thirdbox {
+        border: 4px solid blue;
+        height: 15vh;
+        background-color: rgb(176, 176, 220);
+        display: flex;
+        padding: 16px;
+        gap: 8px;
+    }
+
+    .three-box {
+        background-color: rgb(213, 174, 139);
+        border: 4px solid rgb(113, 59, 12);
+        flex: 1;
+
+    }
+
+    .sub {
+        padding: 10px;
+        display: flex;
+    }
+
+    .two-box {
+        background-color: rgb(243, 175, 175);
+        border: 4px solid red;
+        flex: 1;
+        height: 10vh;
+
+    }
+
+    .secondbox {
+
+        height: 30vh;
+        display: flex;
+        flex: 1;
+        margin: 10px;
+        gap: 7px;
+    }
+
+    .bigbox,
+    .equalbox {
+
+        flex: 1;
+    }
+
+    .bigbox {
+        border: 4px solid darkred;
+        background-color: rgb(217, 179, 179);
+    }
+
+    .equalbox {
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .equalbox1,
+    .equalbox2 {
+        background-color: rgb(217, 179, 179);
+        border: 4px solid darkred;
+        flex: 1;
+    }
+
+    .equalbox2 {
+        margin-top: 5px;
+    }
+
+    .fourbox {
+        border: 4px solid yellow;
+
+    }
+
+    .aa,
+    .dd {
+        flex: 2;
+        background-color: rgb(14, 14, 70);
+    }
+
+    .bb,
+    .cc {
+        flex: 1;
+        background-color: azure;
+    }
+</style>
+
+<!-- practice css  -->
+<style>
+    .flex-container {
+        display: flex;
+    }
+
+    .flex-container div {
+        background-color: peachpuff;
+        border: 4px solid black;
+        height: 100px;
+        width: 200xp;
+        /* flex: 1; */
+        /* flex: 2; */
+    }
+
+    .s1,
+    .s2,
+    .s3 {
+        flex: 1;
+    }
+
+    .container {
+        background-color: lightblue;
+        padding: 16px;
+        border: 4px solid blue;
+        margin: 8px;
+        display: flex;
+
+    }
+
+    .items {
+        border: 4px solid salmon;
+        height: 48px;
+        background-color: aquamarine;
+        padding: 4px;
+        flex: 1;
+    }
+</style>
+
+</html>
